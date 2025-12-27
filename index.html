@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gaurav Kumar — Portfolio</title>
+  <meta name="description" content="Gaurav Kumar — Frontend Developer. Projects, skills and contact." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="logo" href="#home">Gaurav <span>Kumar </span></a>
+
+      <button id="menuToggle" class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="controls">
+        <button id="themeBtn" class="btn-ghost" aria-pressed="false">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO -->
+     <section id="home" class="hero section">
+  <div class="container hero-grid">
+
+    <!-- TEXT -->
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="name">Gaurav Kumar</span></h1>
+      <p class="lead"><span id="typing">Frontend Developer</span> — building clean & responsive web interfaces.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn">See Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE (Perfect inside blob) -->
+    <div class="hero-visual">
+
+      <div class="blob-wrapper">
+        <!-- Your Photo -->
+        <img src="images/virat.png" alt="Gaurav Kumar" class="blob-photo">
+
+        <!-- Blob Shape -->
+        <svg viewBox="0 0 400 400" class="blob-svg" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="blobClip">
+              <path d="M43.8,-61.6C56.7,-52.9,66.9,-42.3,72.9,-29.8C78.9,-17.4,80.7,-3.1,78.7,10.3C76.6,23.7,70.7,36.2,61.2,45.2C51.8,54.1,38.8,59.5,25.1,63.3C11.4,67.1,-2.1,69.4,-15.6,67.5C-29.2,65.6,-43.8,59.5,-53.4,48.4C-63,37.4,-67.6,21.3,-67.9,5.7C-68.2,-9.9,-64.1,-25.1,-54.3,-35.8C-44.4,-46.6,-28.8,-52.9,-13.9,-58.3C1,-63.7,16.5,-68.6,43.8,-61.6Z" transform="translate(100 100) scale(1.50)"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-clean">
+        <div class="about-left">
+          <h2>About Me</h2>
+          <p>
+            I'm <strong>Gaurav Kumar</strong>, a frontend developer focused on building
+            accessible, responsive and maintainable web interfaces. I use semantic HTML,
+            modern CSS (Flexbox / Grid) and vanilla JavaScript to create projects that are
+            clean and easy to explain.
+          </p>
+
+          <ul class="about-list">
+            <li><strong>Location:</strong> India</li>
+            <li><strong>Role:</strong> Frontend Developer</li>
+            <li><strong>Interests:</strong> UI Design, Performance, JS</li>
+            <li><strong>Email:</strong> <a href="mailto:gaurav@example.com">gaurav@example.com</a></li>
+          </ul>
+        </div>
+
+        <div class="about-right">
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-number">6+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">1+</div>
+              <div class="stat-label">Years Learning</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Motivation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-box">
+        <div class="skills-grid">
+          
+          <div class="skill">
+            <div class="skill-heading">
+            <img src="images/html.png" class ="icon">
+            HTML</div>
+            <div class="progress" data-value="95"><span></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-heading">
+              <img src="images/css.png" class ="icon">
+              CSS / Layouts</div>
+            <div class="progress" data-value="88"><span></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-heading">
+              <img src="images/js.png" class ="icon">
+              JavaScript</div>
+            <div class="progress" data-value="75"><span></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-heading">
+              <img src="images/rd.png" class ="icon">
+              Responsive Design</div>
+            <div class="progress" data-value="90"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-clean">
+          <article class="proj">
+            <div class="proj-thumb">To-Do</div>
+            <div class="proj-body">
+              <h3>To-Do List App</h3>
+              <p>Manage tasks with add / delete / complete and persistent storage using localStorage.</p>
+              <div class="proj-meta">
+                <span class="tech">HTML • CSS • JavaScript</span>
+                <div class="actions">
+                  <button class="btn small viewBtn" data-project="todo">View</button>
+                  <a class="link" href="#">Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj">
+            <div class="proj-thumb">Calc</div>
+            <div class="proj-body">
+              <h3>Calculator</h3>
+              <p>Responsive calculator with keyboard support and clean UI.</p>
+              <div class="proj-meta">
+                <span class="tech">HTML • CSS • JavaScript</span>
+                <div class="actions">
+                  <button class="btn small viewBtn" data-project="calc">View</button>
+                  <a class="link" href="#">Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj">
+            <div class="proj-thumb">UI</div>
+            <div class="proj-body">
+              <h3>Portfolio (this site)</h3>
+              <p>Modern portfolio demonstrating layout, animations, theme toggle and accessibility.</p>
+              <div class="proj-meta">
+                <span class="tech">HTML • CSS • JS</span>
+                <div class="actions">
+                  <button class="btn small viewBtn" data-project="portfolio">View</button>
+                  <a class="link" href="#">Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-clean">
+        <div class="contact-form-card">
+          <h2>Contact Me</h2>
+          <p>Send a message and I will reply soon.</p>
+
+          <form id="contactForm" novalidate>
+            <label>
+              <span>Full name</span>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea id="message" name="message" rows="5" placeholder="Write a short message" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn" type="submit">Send Message</button>
+              <button class="btn outline" type="reset">Reset</button>
+            </div>
+          </form>
+
+        </div>
+
+        <aside class="contact-info">
+          <h3>Contact Info</h3>
+          <p><strong>Email:</strong> <a href="mailto:gaurav@example.com">gaurav@example.com</a></p>
+          <p><strong>Location:</strong> India</p>
+          <div class="socials">
+            <a href="#">GitHub</a> •
+            <a href="#">LinkedIn</a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Gaurav Kumar — Built with HTML · CSS · JavaScript</p>
+      <a id="topBtn" class="top-btn" href="#home" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close">✕</button>
+      <h3 id="modalTitle">Project</h3>
+      <p id="modalDesc"></p>
+      <pre id="modalCode" class="codeblock"></pre>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
